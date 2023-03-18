@@ -39,6 +39,7 @@ M.defaults = {
   enhanced_diff_hl = false,
   git_cmd = { "git" },
   hg_cmd = { "hg" },
+  fossil_cmd = { "fossil" },
   use_icons = true,
   show_help_hints = true,
   watch_index = true,
@@ -305,6 +306,10 @@ M.log_option_defaults = {
     keyword = nil,
     include = nil,
     exclude = nil,
+  },
+  ---@type FossilLogOptions
+  fossil = {
+    limit = 256,
   },
 }
 
